@@ -7,6 +7,19 @@ public:
 	int age;
 	int avg_mark;
 
+	//default constructor 
+	Student() {
+		name = "no name";
+		surname = "no surname";
+		age = 15;
+		avg_mark = 4;
+	}
+
+	~Student() {
+		cout << "destruction" << endl;
+	}
+
+
 	void clear() {
 		name = "no name";
 		surname = "no surname";
@@ -28,14 +41,15 @@ public:
 
 int main() {
 	Student st1;
+	cout << st1.convert() << endl;
 
-	st1.name = "ivan";
+	/*st1.name = "ivan";
 	st1.surname = "ivanov";
 	st1.age = 14;
-	st1.avg_mark = 10;
+	st1.avg_mark = 10;*/
 
 
-	cout << "before: " << endl;
+	/*cout << "before: " << endl;
 
 	cout << st1.convert();
 
@@ -43,7 +57,7 @@ int main() {
 	st1.clear();
 
 	cout << "\nafter: " << endl;
-	cout << st1.convert();
+	cout << st1.convert();*/
 
 	return 0;
 }
