@@ -25,6 +25,15 @@ public:
 		avg_mark = mark;
 	}
 
+	Student(string nm, string surn) {
+		cout << "constructor with arguments" << endl;
+		name = nm;
+		surname = surn;
+		age = 15;
+		avg_mark = 4;
+	}
+
+
 	~Student() {
 		cout << "destruction" << endl;
 	}
@@ -50,26 +59,14 @@ public:
 
 
 int main() {
-	Student st1; //calling default-constructor
+	Student st1;                              //calling default-constructor
 	Student st2("ivan", "ivanov", 14, 10);   //calling constructor with arguments
+	Student st3("dima", "gus");
+
 	cout << st1.convert() << endl;
 	cout << st2.convert() << endl;
+	cout << st3.convert() << endl;
 
-	/*st1.name = "ivan";
-	st1.surname = "ivanov";
-	st1.age = 14;
-	st1.avg_mark = 10;*/
-
-
-	/*cout << "before: " << endl;
-
-	cout << st1.convert();
-
-
-	st1.clear();
-
-	cout << "\nafter: " << endl;
-	cout << st1.convert();*/
-
+	
 	return 0;
 }
