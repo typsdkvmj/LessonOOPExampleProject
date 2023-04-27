@@ -12,7 +12,7 @@ Student::Student() {
 
 //constructor with arguments
 Student::Student(string nm, string surn, int a, float mark) {
-	cout << "constructor with arguments" << endl;
+	//cout << "constructor with arguments" << endl;
 	name = nm;
 	surname = surn;
 	age = a;
