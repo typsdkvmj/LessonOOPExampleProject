@@ -3,8 +3,8 @@
 
 class Manager {
 public:
-	float calcStudentsAvgAge(Group group );
-	float calcStudentsAvgMark(Group group);
-	Student findBestStudent(Group group);
-	Student findWorstStudent(Group group);
+	static float calcStudentsAvgAge(Group group );
+	static float calcStudentsAvgMark(Group group);
+	static Student findBestStudent(Group group);
+	static Student findWorstStudent(Group group);
 };
