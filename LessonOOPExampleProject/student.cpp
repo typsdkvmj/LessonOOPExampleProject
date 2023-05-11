@@ -1,6 +1,12 @@
 #include "student.h"
 
 
+int Student::count = 0;
+
+int Student::getCount() {
+	return count;
+}
+
 //default constructor 
 Student::Student() {
 	cout << "default consructor" << endl;
@@ -12,6 +18,7 @@ Student::Student() {
 
 //constructor with arguments
 Student::Student(string nm, string surn, int a, float mark) {
+	count++;
 	//cout << "constructor with arguments" << endl;
 	name = nm;
 	surname = surn;
@@ -20,6 +27,7 @@ Student::Student(string nm, string surn, int a, float mark) {
 }
 
 Student::Student(string nm, string surn) {
+	count++;
 	cout << "constructor with arguments" << endl;
 	name = nm;
 	surname = surn;
@@ -29,6 +37,7 @@ Student::Student(string nm, string surn) {
 
 //copy-constructor
 Student::Student(const Student& st) {
+	count++;
 	cout << "copy-constructor" << endl;
 	name = st.name;
 	surname = st.surname;
@@ -37,24 +46,29 @@ Student::Student(const Student& st) {
 }
 
 Student::~Student() {
-	cout << "destruction" << endl;
+	count--;
+	//cout << "destruction" << endl;
 }
 
 string Student::getName() {
+
 	return name;
 }
 
 
 void Student::setName(string n) {
+
 	name = n;
 }
 
 string Student::getSurmame() {
+
 	return surname;
 }
 
 
 void Student::setSurName(string n) {
+	
 	surname = n;
 }
 
