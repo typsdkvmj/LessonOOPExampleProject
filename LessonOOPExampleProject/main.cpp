@@ -2,7 +2,7 @@
 
 
 int main() {
-	Student st;
+	
 
 
 	return 0;

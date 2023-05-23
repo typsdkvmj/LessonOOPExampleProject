@@ -15,8 +15,8 @@ Student::Student():Human() {
 }
 
 //constructor with arguments
-Student::Student(string nm, string surn, int a, float mark)
-	:Human(nm, surn,a)
+Student::Student(string name, string surname, int age, float mark)
+	:Human(name, surname,age)
 {
 	count++;
 	//cout << "constructor with arguments" << endl;

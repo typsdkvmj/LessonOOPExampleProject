@@ -3,11 +3,14 @@
 class Human {
 private:
 
+	
+	
+public:
+
 	string name;
 	string surname;
 	int age;
-	
-public:
+
 	Human();
 	Human(string nm, string surn, int a);
 	~Human();
